@@ -1,0 +1,331 @@
+@media (max-width: 991px) {
+    .header {
+        justify-content: space-around;
+    }
+    .promo{
+        padding: 21px 0 50px 0;
+        min-height: 650px;
+        
+        &__wrapper {
+           margin-top: 60px;
+           width: 710px; 
+        }
+        &__header {
+            font-size: 38px;
+            line-height: 38px;
+        }
+        &__subheader {
+            font-size: 20px;
+            line-height: 20px;
+            margin-top: 10px;
+        }
+        &__icons {
+            margin-top: 130px;
+        }
+    }
+    .button {
+        &_main {
+            margin-top: 50px;
+        }
+    }
+    .advantages {
+        &__wrapper {
+        justify-content: space-around;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
+    .consultation {
+        padding-left: 20px;
+    }
+    .slick-dots {
+        text-align: center;
+        display: flex; // поставить кнопки в ряд
+        justify-content: center; // выровнять по центру
+        list-style: none;
+        flex-direction: row;
+        li {
+            button {
+                font-size: 0;
+                background: $main-color; // цвет фона
+                border: none; // без рамки
+                border-radius: 50%; // радиус закругления
+                height: 15px; // высота точки
+                width: 15px; // ширина точки
+                margin: 5px; // отступы между точками
+                outline: none; // убираем обводку
+                list-style: none;
+            } 
+            &.slick-active {
+                button {
+                    background: #8d0202;
+                }
+            }
+            
+        }     
+    }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+    .reviews {
+        &-item {
+          width: 90%;
+          margin-left: 40px;
+        }
+    }
+    .footer {
+        height: 600px;
+        &__info {
+            width: 400px;
+            height: 250px;
+        }
+        &__map {
+            height: 600px;
+        }
+    }
+    .pageup {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media(max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .header {
+        &__logo {
+            width: 200px;
+        }
+        &__official {
+            margin-right: 20px;
+            span {
+                font-size: 15px;
+            }
+        }
+        &__phone {
+            font-size: 15px;
+        }
+    }
+    .button {
+        width: 130px;
+        font-size: 11px;
+    }
+    .promo {
+        &__wrapper {
+            width: 530px;
+        }
+    }
+    .advantages {
+        padding: 40px 0 60px 0;
+        &__item {
+            padding: 0 10px 0 10px;
+            width: 33%;
+        }
+        &__descr {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+    }
+    .consultation {
+        padding: 50px 0 70px 0;
+    }
+    .title {
+        &_left {
+            font-size: 33px;
+        }
+    }
+    .carousel   {
+        &__inner {
+            width: 540px;
+           img {
+               width: 100%;
+           }
+        }
+    }
+    .catalog {
+        padding-bottom: 40px;
+        &__tab {
+            width: 150px;
+            height: 45px;
+            font-size: 14px;
+            line-height: 45px;
+        }
+        &-item {
+            width: 330px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .container {
+        max-width: 320px;
+    }
+    .header {
+        flex-wrap: wrap;
+        &__logo {
+            width: 250px;
+        }
+        &__official {
+            margin:10px 20px 10px 10px;
+            font-size: 11px;
+            span {
+                font-size: 13px;
+            }
+        }
+        &__phone {
+            font-size: 13px;
+            margin: 15px 10px 0 0;
+        }
+    }
+    .button {
+        width: 115px;
+        margin-right: 10px;
+        &_main {
+            margin: 30px 10px 0 0;
+            font-size: 11px;
+            height: 36px;
+        }
+        &_submit {
+            height: 40px;
+            font-size: 12px;
+        }
+    }
+    .promo {
+        &__wrapper {
+            width: 320px;
+            margin-top: 90px;
+        }
+        &__header {
+            font-size: 24px;
+            line-height: 25px;
+            margin: 0 auto;
+        }
+        &__subheader {
+            margin: 10px auto;
+            font-size: 13px;
+            line-height: 3px;
+        }
+        &__icons {
+            width: 300px;
+            margin-right: 15px;
+        }
+        &__link {
+            margin-right: 10px;
+        }
+    }
+    .title {
+        font-size: 23px;
+        &_left {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    }
+    .advantages {
+        padding: 40px 0 35px ;
+        &__wrapper {
+            margin-top: 30px;
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__descr {
+            margin-top: 13px;
+            font-size: 13px;
+        }
+    }
+    .consultation {
+        min-height: 580px;
+        padding: 50px 0;
+        &__descr {
+            margin-left: 10px;
+            font-size: 15px;
+        }
+    }
+    .feed-form {
+        width: 250px;
+        margin-left: 10px;
+        input {
+            height: 45px;
+            font-size: 13px;
+        }
+    }
+    .carousel {
+        padding: 55px 0;
+        &__inner {
+            width: 320px;
+        }
+    }
+    .catalog {
+        &__content {
+            margin-top: 30px;
+        }
+        &__tabs {
+            flex-direction: column;
+            margin-top: 5px;
+        }
+        &__tab {
+            margin-top: 10px;
+        }
+        &-item {
+            width: 290px;
+            &__img {
+                height: 185px;
+            }
+            &__subtitle {
+                margin-top: 15px;
+                font-size: 15px;
+            }
+            &__descr {
+                margin-top: 14px;
+                font-size: 13px;
+            }
+            &__link {
+                margin-top: 45px;
+            }
+            &__price {
+                font-size: 18px;
+            }
+            &__old-price {
+                font-size: 12px;
+            }
+        }
+    }
+    .reviews {
+        &-item {
+            margin-top: 50px;
+            flex-direction: column;
+            margin-left: 0;
+            &__content {
+                width: 95%;
+            }
+            &:nth-child(2) {
+                margin-top: 35px;
+            }
+            &__content {
+                &_title {
+                    margin-top: 15px;
+                    font-size: 17px;
+                }
+            }
+        }
+        
+    }
+    .footer {
+        &__info {
+            width: 320px;
+            height: 240px;
+        }
+        &__addr {
+            margin-bottom: 29px;
+            font-size: 18px;
+        }
+        &__phone {
+            font-size: 19px;
+            margin-bottom: 28px;
+        }
+    }
+}
