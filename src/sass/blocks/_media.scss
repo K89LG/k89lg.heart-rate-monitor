@@ -271,7 +271,18 @@
             margin-top: 10px;
         }
         &-item {
+            min-height: 510px;
             width: 290px;
+            &__content {
+                &_active {
+                    min-height: 375px;
+                }
+            }
+            &__list {
+                &_active {
+                    min-height: 375px;
+                }
+            }
             &__img {
                 height: 185px;
             }
@@ -328,4 +339,23 @@
             margin-bottom: 28px;
         }
     }
+    .modal {
+        width: 245px;
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__close {
+            right: -30px;
+        }
+    }
+    .feed-form{
+        &_mt25 {
+            margin-left: 0px;
+            transform: translateX(-15px);
+            width: 200px;
+        }
+    }  
 }
